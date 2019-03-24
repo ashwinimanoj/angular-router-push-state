@@ -1,0 +1,6 @@
+<div class="todo-list">
+  <h1>Todo List</h1>
+  <ul >
+      <li *ngFor="let todo of todos" [ngClass]="{'done-todo': todo.done, 'not-done-todo': !todo.done}">{{todo.name}}</li>
+  </ul>
+</div>
