@@ -1,5 +1,7 @@
 # RouterExample
 
+An example of Push State.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.2.
 
 ## Development server
