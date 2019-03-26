@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TodoListComponent } from './todo-list/todo-list.component';
 import { UserListComponent } from './user-list/user-list.component';
+import { RouterModule, Routes } from '@angular/router';
 
 const appRoutes: Routes = [
   {
@@ -16,10 +17,6 @@ const appRoutes: Routes = [
     path: 'todos',
     component: TodoListComponent,
     data: { title: 'Todos List' }
-  },
-  { path: '',
-    redirectTo: '/heroes',
-    pathMatch: 'full'
   }
 ];
 @NgModule({
@@ -30,7 +27,11 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(
+      appRoutes,
+      { enableTracing: true } // <-- debugging purposes only
+    )
   ],
   providers: [],
   bootstrap: [AppComponent]

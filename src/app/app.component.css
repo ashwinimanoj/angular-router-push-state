@@ -1,0 +1,8 @@
+.nav-link {
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  font-size: 20px;
+  color: blue;
+}

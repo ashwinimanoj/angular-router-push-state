@@ -5,8 +5,11 @@
   </h1>
 </div>
 <div>
-  <app-todo-list></app-todo-list>
-  <app-user-list></app-user-list>
+  <ul>
+    <li class="nav-link" [routerLink]="['/']">Home</li>
+    <li class="nav-link" [routerLink]="['/users']">Users</li>
+    <li class="nav-link" [routerLink]="['/todos']">Todos</li>
+  </ul>
 </div>
 
 <router-outlet></router-outlet>
