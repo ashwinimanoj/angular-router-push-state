@@ -3,4 +3,5 @@
   <ul >
       <li *ngFor="let todo of todos" [ngClass]="{'done-todo': todo.done, 'not-done-todo': !todo.done}">{{todo.name}}</li>
   </ul>
+  <input type="text" [(ngModel)]="name">
 </div>
