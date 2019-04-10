@@ -24,6 +24,7 @@ export class TodoListComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    console.log('Init Todo List');
   }
 
 }
