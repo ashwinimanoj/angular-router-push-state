@@ -6,9 +6,9 @@
 </div>
 <div>
   <ul>
-    <li class="nav-link" [routerLink]="['/']">Home</li>
-    <li class="nav-link" [routerLink]="['/users']">Users</li>
-    <li class="nav-link" [routerLink]="['/todos']">Todos</li>
+    <li class="nav-link" [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</li>
+    <li class="nav-link" [routerLink]="['/users']" routerLinkActive="active">Users</li>
+    <li class="nav-link" [routerLink]="['/todos']" routerLinkActive="active">Todos</li>
   </ul>
 </div>
 
